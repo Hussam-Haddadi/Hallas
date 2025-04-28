@@ -1,0 +1,160 @@
+:root {
+    --primary: #0077b6;
+  }
+  
+  * { box-sizing: border-box; }
+  
+  body {
+    margin: 0;
+    font-family: "Cairo", sans-serif;
+    background: #fdfdfd;
+    color: #111;
+    scroll-behavior: smooth;
+    line-height: 2.5;
+  }
+  
+  /* ===== NAVBAR ===== */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    z-index: 999;
+  }
+  nav a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.25s;
+  }
+  nav a:hover { color: var(--primary); }
+  
+  /* ===== HERO ===== */
+  header {
+    background: url("481940945_18493297348013803_8365456921134342111_n.jpeg") center/cover no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    padding: 0 1rem;
+  }
+  header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+  }
+  header * { position: relative; }
+  header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+  .hook {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+  .tagline { font-size: 1.25rem; margin-top: 1rem; }
+  
+  /* ===== SECTIONS ===== */
+  section { padding: 4rem 1rem; max-width: 900px; margin: auto; }
+  section h2 { font-size: 2rem; margin-bottom: 1rem; text-align: center; }
+  
+  /* ===== ABOUT AUTHOR ===== */
+  .about-author { display: flex; flex-direction: column; align-items: center; gap: 2rem; }
+  .about-author img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; }
+  
+  @media (min-width:768px) {
+    .about-author { flex-direction: row; text-align: right; }
+    .about-author div { flex: 1; }
+  }
+  
+  /* ===== STORES ===== */
+  .stores {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  }
+  .store-card {
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .store-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+  }
+  .store-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+  }
+  
+  
+  /* ===== SOCIAL ===== */
+  .social { display: flex; justify-content: center; gap: 1.5rem; font-size: 2.25rem; }
+  .social a { color: #111; transition: 0.3s; }
+  .social a:hover { color: var(--primary); }
+  
+  /* ===== FOOTER ===== */
+  footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #fafafa;
+    color: #666;
+    font-size: 0.875rem;
+  }
+  /* ========== لوحة ألوان الغلاف ========== */
+:root{
+    /* ذهبي-بني مُستمد من الغلاف */
+    --primary: #c79a5c;
+  }
+  
+  /* خلفية داكنة ونص فاتح يناسبان أجواء الغلاف */
+  body{
+    background: #1e1b18;   /* بني-غامق شبه فحمي */
+    color: #e8e6e3;         /* رمادي فاتح مائل للأوف-وايت */
+  }
+  
+  /* ===== NAVBAR ===== */
+  nav{
+    background: rgba(20,18,17,0.85); /* شفافية خفيفة لتظهر الخلفية */
+  }
+  nav a{ color: #e8e6e3; }
+  nav a:hover{ color: var(--primary); }
+  
+  /* رؤوس الأقسام بنفس لون التمييز */
+  h2{
+    color: var(--primary);
+  }
+  
+  /* ===== بطاقات المتاجر ===== */
+  .store-card{
+    border-color: var(--primary);
+    background: #26211d;   /* أغمق قليلًا من خلفية الموقع */
+    color: #e8e6e3;
+  }
+  .store-card a{ color: var(--primary); }
+  
+  /* ===== الفوتر ===== */
+  footer{
+    background: #1e1b18;   /* نفس خلفية الجسم لتناسق أعلى/أسفل */
+    color: #8f8c8a;        /* رمادي أدكن قليلاً */
+  }
+  
+  
